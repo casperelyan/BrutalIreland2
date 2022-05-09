@@ -72,23 +72,25 @@ padding-bottom: 0px;
 }
 
 #sliderhero figure img{ 
-    width: 14%;
+    width: 12%;
     float:left;
 }
 
 @keyframes sliderhero
 {0% {left:0%;} /*1 photo*/
 10% {left:0%;} /*1 photo*/
-25% {left:-50%;} /*2 photo*/
-33% {left:-50%;} /*2 photo*/
-43% {left:-120%;} /*3 photo*/
-50% {left:-120%;} /*3 photo*/
-56% {left:-190%;} /*4 photo*/
-62% {left:-190%;} /*4 photo*/
-72% {left:-270%;} /*5 photo*/
-82% {left:-270%;} /*5 photo*/
-89% {left:-320%} /*6 photo*/
-98% {left:-320%} /*6 photo*/
+24% {left:-50%;} /*2 photo*/
+32% {left:-50%;} /*2 photo*/
+42% {left:-100%;} /*3 photo*/
+49% {left:-100%;} /*3 photo*/
+55% {left:-150%;} /*4 photo*/
+61% {left:-150%;} /*4 photo*/
+69% {left:-230%;} /*5 photo*/
+76% {left:-230%;} /*5 photo*/
+85% {left:-270%} /*6 photo*/
+91% {left:-270%} /*6 photo*/
+96% {left:-325%} /*7 photo*/
+99% {left:-325%} /*7 photo*/
 100% {left:0%}
 }
 
