@@ -7,8 +7,7 @@ body
   font-weight: lighter;
   font-kerning: auto;
   color: #3a3a3a
-
-}
+ }
 
 nav ul {
 list-style: none;
@@ -65,10 +64,28 @@ padding-bottom: 0px;
     width:500%;
     margin:0;
     left:0;
+    animation: 30s sliderhero infinite
 
 }
 
-#sliderhero figure img{
-
-
+#sliderhero figure img{ 
+    width: 14%;
+    float:left;
 }
+
+@keyframes sliderhero
+{0% {left:0%;} /*1 photo*/
+10% {left:0%;} /*1 photo*/
+25% {left:-50%;} /*2 photo*/
+33% {left:-50%;} /*2 photo*/
+43% {left:-120%;} /*3 photo*/
+50% {left:-120%;} /*3 photo*/
+56% {left:-190%;} /*4 photo*/
+62% {left:-190%;} /*4 photo*/
+72% {left:-270%;} /*5 photo*/
+82% {left:-270%;} /*5 photo*/
+89% {left:-320%} /*6 photo*/
+98% {left:-320%} /*6 photo*/
+100% {left:0%}
+}
+
