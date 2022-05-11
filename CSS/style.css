@@ -1,13 +1,25 @@
+/*matching font chooosen Fjalla One for headers and Merriwaeather for regular paragraphs*/
+
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Merriweather+Sans:ital,wght@0,300;0,500;0,600;0,700;0,800;1,300&display=swap');
 
 body
  {margin : 0;
   padding: 0;
-  font-family: Merriweather Sans; sans-serif;
+  font-family: Fjalla One sans-serif;
   font-weight: lighter;
   font-kerning: auto;
-  color: #3a3a3a
+  color: #3a3a3a;
  }
+
+ p {font-family: Merriweather sans-serif;}
+
+
+hr {
+    height:1px; 
+    margin-bottom: 50px; 
+    width:100%;
+   background-color: #3a3a3a;
+}
 
 nav ul {
 list-style: none;
@@ -25,7 +37,6 @@ nav li {
     margin-bottom: 1.8%;
     margin-top: 1.8%;
     margin-right: 2%;
-
 }
 
 
@@ -37,7 +48,6 @@ nav a {
     display:inline-block;
     margin-left:0px;
     letter-spacing: normal;
-
 }
 
 nav a:hover { 
@@ -56,6 +66,8 @@ padding-left: 12px;
 padding-top: 4px;
 padding-bottom: 0px;
 }
+
+
 
 #sliderhero {overflow: hidden;} /* slider ID on Home page*/
 
@@ -94,22 +106,47 @@ padding-bottom: 0px;
 100% {left:0%}
 }
 
-.container {
-    position: relative;
+
+.quote {
+    font-size: xx-large;
     text-align: center;
-    color: rgb(137, 0, 0);
-  }
+    color:#3a3a3a;
+    margin: 10px;
+
+}
+
+.quote div {
+    background-color: whitesmoke;
+    
+}
+
+
+
+
+
+.container {
+    display:inline-flex;
+    background-color: #D3D3D3;
+    width: 100%;
+    height: 500px;
+    opacity: 1;
+    margin:auto;
+}
   
-  /* Bottom left text */
-  .bottom-left {
-    position: absolute;
-    bottom: 8px;
-    left: 16px;
 
-        .centered {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+.container div {
+margin: 10px;
+width:100px;
+height: 300px;
 
+
+}
+
+.left {
+    background-color: #E35A01;}
+
+.center {
+    background-color: gray;
+}
+.right {background-color: #0048A4;}
 
