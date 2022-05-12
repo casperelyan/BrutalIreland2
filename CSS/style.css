@@ -11,7 +11,7 @@ body
   color: #3a3a3a;
  }
 
- p {font-family: "Merriweather", 'Times New Roman', Times, serif;}
+ p {font-family: "Merriweather", Times New Roman, Times, serif;}
 
 
 hr {
@@ -109,44 +109,63 @@ padding-bottom: 0px;
 
 .quote {
     font-size: xx-large;
+    color:whitesmoke;
+    background-color: #3a3a3a;
     text-align: center;
-    color:#3a3a3a;
-    margin: 10px;
-
-}
-
-.quote div {
-    background-color: whitesmoke;
-    
-}
-
-
-
-
-
-.container {
-    display:inline-flex;
-    background-color: #D3D3D3;
+    margin-bottom: 20px;
     width: 100%;
-    height: 500px;
-    opacity: 1;
+    height:110px; 
+   line-height:110px;
+    
+    }
+
+
+.flex-container {
+    display:inline-flex;
+    justify-content: center;
+    background-color: whitesmoke;
+    width: 100%;
+    height: auto;
     margin:auto;
 }
   
 
-.container div {
+.flex-container div {
 margin: 10px;
-width:100px;
-height: 300px;
+width:500px;
+height: auto;
+
+
 
 
 }
 
-.left {
-    background-color: #E35A01;}
-
-.center {
-    background-color: gray;
+.flex-item-left {background-color: #E35A01;
+    align-items: center;
 }
-.right {background-color: #0048A4;}
+
+.flex-item-center {background-color: gray;
+align-self: center;
+
+}
+.flex-item-right {background-color: #0048A4;
+    align-items: center;
+}
+
+
+.flex-item-left header-flex_left { 
+    text-transform: uppercase;
+    margin: auto;
+    font-size: 25px;
+    word-wrap: break-word;
+    text-align: right;
+   }
+
+   .flex-item-right header-flex_right { 
+    text-transform: uppercase;
+    margin: auto;
+    font-size: 25px;
+    word-wrap: break-word;
+    text-align: left;
+   }
 
