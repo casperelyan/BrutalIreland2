@@ -197,12 +197,14 @@ figcaption {
 figcaption h2 {
         text-transform: uppercase;
         display: inline-block;
-        margin: 8px ;
-       
-/* this code belowe was partialy copied from YouTube tutorial video, I modified this code to fit the website design */ 
-      }
+        margin: 5px ; }
+
+figcaption h3 {
+    font-style: italic;
+    margin-top: 0.5px;
+}        
       figcaption a {
-        background: #E35A01;
+        background: #0048A4;
         font-family: "Fjalla One", Arial, Helvetica, sans-serif;
         text-decoration: none;
         color: whitesmoke;
@@ -214,9 +216,10 @@ figcaption h2 {
        
     
         figcaption a:hover { 
-            color:#0048A4
+            color:#E35A01;
              }
     
+    /* this code belowe was partialy copied from YouTube tutorial video, I modified this code to fit the website design */
       
       .hover-animation {
         position: relative;

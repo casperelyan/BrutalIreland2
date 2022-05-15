@@ -51,3 +51,20 @@
 
 </div>
 </section>
+
+
+<figure><!--Fifth image Royal National Theatre, London-->
+    <div class="hover-animation">
+        <!--img-back class is for color image-->
+      <img class="img-back" src="https://res.cloudinary.com/dqoovwhgm/image/upload/v1652653274/code_institute_first_project/slider/national_theatre_london_color_c382kf.jpg" 
+      alt="Building of The Royal National Theatre, London">
+      <img class="img-front" src="https://res.cloudinary.com/dqoovwhgm/image/upload/v1652653274/code_institute_first_project/slider/national_theatre_london_gray_x43vei.jpg" 
+      alt="Building of The Royal Naional Theatre, London">
+    </div>
+    <figcaption>
+      <h2>Royal Theatre</h2>
+    <h3><i class="fa-solid fa-map-pin"></i> London, UK</h3>
+
+      <a href="https://www.archdaily.com/772979/ad-classics-royal-national-theatre-denys-lasdun" target="_blank">Discover more</a>
+    </figcaption>
+  </figure></div></div>
