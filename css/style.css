@@ -197,6 +197,7 @@ figcaption {
 figcaption h2 {
         text-transform: uppercase;
         display: inline-block;
+        letter-spacing: -1.6px;
         margin: 5px ; }
 
 figcaption h3 {
