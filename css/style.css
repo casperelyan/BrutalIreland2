@@ -16,8 +16,7 @@ body
     font-kerning: auto;
 }
 
-/*@media only screen and (max-width: 400px)
-change logo for smaler if screen less than 400px*/
+
 
 
 nav ul {
@@ -220,7 +219,8 @@ figcaption h3 {
             color:#E35A01;
              }
     
-    /* this code belowe was partialy copied from YouTube tutorial video, I modified this code to fit the website design */
+    /* this code belowe was partialy copied from YouTube tutorial video, 
+    I modified this code to fit the website design */
       
       .hover-animation {
         position: relative;
@@ -246,3 +246,82 @@ figcaption h3 {
       .hover-animation img.img-front:hover{
         opacity:0;
         cursor: pointer; }
+
+
+.photowalks-p { 
+    background-color: whitesmoke;
+padding: 50px;
+    margin: 40px;
+    font-kerning: auto;
+
+}
+
+.icon {
+    float: left;
+    width: 20%;
+    position: relative;
+padding-right: 10px;
+padding-top: 15px;
+padding-bottom: 10px;
+transition: transform 0.6s;
+}
+
+/*zoom effect - pretty useless but looks cool :D */
+.icon:hover {
+    -ms-transform: scale(1.1); 
+    -webkit-transform: scale(1.1); 
+    transform: scale(1.1); 
+  }
+
+
+/*Forms styling
+============================
+=============================*/
+
+fieldset {
+    width: 70%;
+    margin: auto;
+}
+
+legend {
+    margin: 20px;
+    font-size: 2.5vw;
+
+}
+
+
+input[type=text],
+input[type=email]
+ {
+        width: 98%;
+        font-size: 25px;
+        border: 1px solid;
+        border-radius: 4px;
+        resize: vertical;
+        padding: 5px;
+        margin: 3px;
+
+}
+
+input[type=radio]
+{ margin-left: 20px;
+    accent-color: #E35A01;
+   
+
+}
+
+input::placeholder { 
+   
+    font-family: Fjalla One;
+    color: #E35A01;
+    font-size: 1.8vw;
+    text-align: center;
+    opacity: 0.8;
+    text-transform:capitalize;
+}
+
+label {
+   font-size: 2vw;
+  
+}
+
