@@ -26,21 +26,21 @@
 
     <figure>
         <img src="https://res.cloudinary.com/dqoovwhgm/image/upload/v1652978585/code_institute_first_project/slider/banner_photowalks_z6pktq.jpg" 
-        alt="Photowalks top banner - man holding camera in city" width="100%">
+        alt="Photowalks top banner - man holding camera in a city" width="100%">
 
 
     
     </figure>
     <section>
-    <h1>Learn architectural photography with us</h1>
+    <h1 class="quote">Learn architectural photography with us</h1>
 
     <div class="photowalks-p">
         
-            <h3>Before you start your photographic adventure with us, tell us something about yourself.</h3>
+            <h2 id="orange-header">Before you start your photographic adventure with us, tell us something about yourself</h2>
             <p><img src="https://res.cloudinary.com/dqoovwhgm/image/upload/v1653142351/code_institute_first_project/slider/form_icon_nudjjd.png"
                 alt="Fill the form logo" class="icon">
                 Our photo workshops are available to everyone. From amateur to advanced hobbyist. 
-                We also run groups for professional photographers where technical knowledge is limited to bare minium. 
+                We also run groups for professional photographers where technical knowledge is limited to bare minium 
                 but we will walk you around the city and show the most beautifully ugly  
                 architecture and talk about history of those mouth-watering construction. 
                 Workshops for professionals are run by our friendly architect who will take you inside the building to places 
@@ -55,7 +55,7 @@
 </section>
 <section>
 	<div class="photowalks-p">
-        <h4><center><b>Fill out the short form below and someone from our team will contact you shortly:</h4></b></center>
+        <h4 class="center-row"><i class="fa-regular fa-file-arrow-down"></i><b>Fill out the short form below and someone from our team will contact you shortly</h4></b>
         <BR>
     <form action="#" method="POST">
 
@@ -105,16 +105,27 @@
 			<label for="XL">XL</label></div>
 			
 
-</fieldset></div>
+</fieldset>
+
+
+</div>
 
 <div class="photowalks-p">
      <fieldset>
         <legend>Technicality:</legend>
        <div>
            <p>What is your main camera brand?</p>
-
-
-       </div>
+         <input id="camerabrand" name="cameras_brands" list="cameras" placeholder="Your camera" required>
+         <datalist id="cameras">
+                <option value="CANON">
+                <option value="NIKON">
+                <option value="SONY">
+                <option value="FUJIFILM">
+                <option value="LEICA">
+                <option value="OTHER">
+            </datalist>
+        </div>
+       
 <BR><div>
         <p>Is this a full frame camera ?</p>
         <input id="YES" name="yesno" value="YES" type="radio" required>
@@ -144,13 +155,38 @@
 
 </fieldset></div>
 
- 
-
+<div class="photowalks-p">
+    <fieldset>
+       <legend>Show us your craft :</legend>
+      <div>
+          <p>Upload one of your the best archi photo:</p>
+          <!--code bellow was copied from web. I could not add style to this button. 
+            Aparently standart CSS does not work so id and value change only
+    label next to the button-->
+          
+              <label for="upload-button">
+            <input type="file" name="filename" 
+            accept="image/jpg, image/jpeg" id="upload-button"></label><BR><BR>
+           
+               
+ </fieldset>
+ <BR><BR>
+<div class="center-row"><input type="submit" value="SEND" class="submit">
+            <input type="reset" value="RESET FORM" class="reset"></div>
+</form>
 </section>
-<footer>Copyright and social media, contact details</footer>
+
 
 <!--Font awesome script code-->
 <script src="https://kit.fontawesome.com/9c919fae94.js" crossorigin="anonymous"></script>
-</body>
 
-</html>
+<footer>
+
+    <div id="footer-div-left">Find us on:
+
+    <a href="https://www.facebook.com" target="_blank" aria-label="Find us on Facebook "><i class="fa-brands fa-facebook-square"></i> Facebook</a>
+    <a href="https://www.instagram.com/eu.architecture/" target="_blank" aria-label="Find us on Instagram"><i class="fa-brands fa-instagram-square"></i> Instagram</a>
+    <a href="https://twitter.com/Ireland_archi" target="_blank" aria-label="Find us on Twitter"><i class="fa-brands fa-twitter-square"></i> Twitter</a></div>
+
+    <div id="footer-div-right">Copyright © 4H4 Photography, Dublin 2022</div></footer>
+</html></body>
