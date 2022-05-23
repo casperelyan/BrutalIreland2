@@ -374,7 +374,7 @@ input[type=reset] {
 }
 
 #upload-button {
-    font-size: large;
+    font-size: 16px;
     color: #E35A01;
     font-family: "Fjalla One", Arial, Helvetica, sans-serif;
 
