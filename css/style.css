@@ -424,25 +424,15 @@ footer a:hover {
     float: right;
 
 }
-/*media query for gallery design
 
-.gallery-masonry {
-    columns: 4;
-    column-gap: 10px;
-    @media (max-width: 1200px) {
-      columns: 3;
-    }
-    @media (max-width: 900px) {
-      columns: 2;
-    }
-    @media (max-width: 750px) {columns: 1;}
-}*/
+
+
 
 .gallery-masonry{
     max-width: 85%;
     margin:20px auto;
   }
-  
+
   .gallery-masonry {
     font-size: 25px;
     background-color:whitesmoke;
@@ -464,6 +454,27 @@ footer a:hover {
     
     border-radius: 3px;
     width: 100%;
+  }
+
+  .image-container :hover {
+    -ms-transform: scale(1.01); 
+    -webkit-transform: scale(1.01); 
+    transform: scale(1.01); }
+
+    /*media query for gallery layout */
+  
+
+    @media only screen and (max-width: 650px) 
+    {.gallery-masonry .image-container {
+        columns:2;
+        gap:2px;}
+  }
+
+
+  @media only screen and (max-width: 400px) 
+    {.gallery-masonry .image-container {
+        columns:1;
+        gap:1px;}
   }
 
   .figcaption-gallery {
