@@ -5,13 +5,13 @@
 body
  {margin : 0;
   padding: 0;
-  font-family: "Fjalla One", Arial, Helvetica, sans-serif;
+  font-family: "Fjalla One", "Arial", "Helvetica", sans-serif;
   font-weight: lighter;
   font-kerning: auto;
   color: #3a3a3a;
  }
 
- p {font-family: "Merriweather", Times New Roman, Times, serif;
+ p {font-family: "Merriweather", "Times New Roman", "Times", serif;
     font-size:large;
     font-kerning: auto;
 }
@@ -23,7 +23,7 @@ body
 }
 }
 
-@media only screen and (max-width: 300px) 
+@media only screen and (max-width: 400px) 
 {p {font-size: medium;
    
 }
@@ -70,7 +70,11 @@ article {margin-left:20px;
 .logo1 {
     position: relative;
     float: left;
-}
+    width: 90%;
+    max-width: 310px;
+    height: auto;
+  }
+
 
 header {
     float: left;
@@ -171,9 +175,15 @@ hr
     
 }
 
-.cell-img {padding:0;
+.cell-img {
+padding:0;
 background-color: whitesmoke;
-width:100%
+}
+
+.image-in-cell {
+width: 100%;
+max-width: 700px;
+height: auto;
 }
 
 
@@ -192,7 +202,7 @@ width:100%
 }
 }
 
-@media only screen and (max-width: 300px) 
+@media only screen and (max-width: 400px) 
 {.grid {
     display:grid;
     grid-template-columns: 1fr;
@@ -213,7 +223,7 @@ h1 {
     line-height: 5vw;
   }
 
-  @media only screen and (max-width: 300px) 
+  @media only screen and (max-width: 400px) 
 {h1 {
     height:15vw; 
     font-size: 4vw;
@@ -237,7 +247,7 @@ h1 {
 }
 }
 
-@media only screen and (max-width: 300px) 
+@media only screen and (max-width: 400px) 
 {.grid2 {
     display:grid;
     grid-template-columns: 1fr;
@@ -337,14 +347,14 @@ figcaption h3 {
       
       
       
-      @media only screen and (max-width: 300px) 
+      @media only screen and (max-width: 400px) 
         {.hover-animation {
             height: 53vw;
             width: 53vw; }
            
         }
 
-        @media only screen and (max-width: 300px) 
+        @media only screen and (max-width: 400px) 
         {.hover-animation img {
             height: 53vw;
             width: 53vw; }
@@ -431,7 +441,7 @@ input[type=radio]
 
 input::placeholder { 
    
-    font-family: Fjalla One;
+    font-family: "Fjalla One";
     color: #3a3a3a;
     font-size: 1.8vw;
     text-align: center;
@@ -593,7 +603,7 @@ footer #footer-div-left a {
   }
 
 
-  @media only screen and (max-width: 300px) 
+  @media only screen and (max-width: 400px) 
     {.gallery-masonry .image-container {
         columns:1;
         gap:1px;}
@@ -645,3 +655,11 @@ and responsive*/
   
   
   }
+
+  .image-top-banner {
+    width: 100%;
+    max-width: 1700px;
+    height: auto;
+  }
+
+  
