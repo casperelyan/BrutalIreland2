@@ -16,6 +16,19 @@ body
     font-kerning: auto;
 }
 
+@media only screen and (max-width: 800px) 
+{p {font-size:larger
+    
+
+}
+}
+
+@media only screen and (max-width: 300px) 
+{p {font-size: medium;
+   
+}
+}
+
 nav ul {
 list-style: none;
 background-color:#E35A01;
@@ -52,8 +65,7 @@ color:#0048A4
 article {margin-left:20px;
 }
 
-h1 {color :#0048A4;
-}
+
 
 .logo1 {
     position: relative;
@@ -120,6 +132,14 @@ header {
     
     }
 
+    @media only screen and (max-width: 500px) 
+{.quote {
+    font-size: 3.5vw;
+    line-height:10vw;
+    height:10vw;
+}
+}
+
 .container {
     padding: 1.5rem;
     background-color: whitesmoke;
@@ -144,14 +164,41 @@ hr
     
 }
 
-.cell.img {padding:0;
-background-color: whitesmoke;}
+.headercell_2 {
+    background-color: #0048A4;
+    color: whitesmoke;
+    padding:5px;
+    
+}
+
+.cell-img {padding:0;
+background-color: whitesmoke;
+width:100%
+}
 
 
 .grid {
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 2rem;
+}
+
+@media only screen and (max-width: 800px) 
+{.grid {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+
+}
+}
+
+@media only screen and (max-width: 300px) 
+{.grid {
+    display:grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+
+}
 }
 
 
@@ -166,15 +213,38 @@ h1 {
     line-height: 5vw;
   }
 
+  @media only screen and (max-width: 300px) 
+{h1 {
+    height:15vw; 
+    font-size: 4vw;
+    line-height: 15vw;
+}
+}
+ 
 
   .grid2 {
     display:grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     gap: 0.5rem;
 }
- .cell2 {padding: 0.5rem;
-    background-color: white;}
 
+@media only screen and (max-width: 800px) 
+{.grid2 {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.4rem;
+
+}
+}
+
+@media only screen and (max-width: 300px) 
+{.grid2 {
+    display:grid;
+    grid-template-columns: 1fr;
+    gap: 0.2rem;
+
+}
+}
 
 figure {
         width: 100%;
@@ -191,23 +261,31 @@ figcaption h2 {
         letter-spacing: -1.6px;
         margin: 5px ; }
 
+        @media only screen and (max-width: 800px) 
+        {figcaption h2 {
+            letter-spacing:normal;
+            
+        }
+           
+        }     
+
 figcaption h3 {
     font-style: italic;
     margin-top: 0.5px;
 }        
 
-/* Find out more buttons styling */
+/* "Find Out More" buttons styling */
+
       figcaption a {
         background: #0048A4;
         font-family: "Fjalla One", Arial, Helvetica, sans-serif;
         text-decoration: none;
         color: whitesmoke;
         display: inline-block;
-        margin-top: 8px;
+        margin-bottom: 15px;
         border-radius: 3px;
         padding: 8px; }
-        
-
+    
        
     
         figcaption a:hover { 
@@ -231,13 +309,52 @@ figcaption h3 {
         left: 0;
         width: 15vw;
         height: 15vw;
-        
         -webkit-transition: opacity 0.5s ease-in-out;
         -moz-transition: opacity 0.5s ease-in-out;
         -ms-transition: opacity 0.5s ease-in-out;
         -o-transition: opacity 0.5s ease-in-out;
         transition: opacity 0.5s ease-in-out;
       }
+
+
+       
+      
+      
+      @media only screen and (max-width: 800px) 
+      {.hover-animation {
+          height: 47vw;
+          width: 47vw; }
+         
+      }
+
+      @media only screen and (max-width: 800px) 
+      {.hover-animation img {
+          height: 47vw;
+          width: 47vw; }
+         
+      }
+    
+      
+      
+      
+      @media only screen and (max-width: 300px) 
+        {.hover-animation {
+            height: 53vw;
+            width: 53vw; }
+           
+        }
+
+        @media only screen and (max-width: 300px) 
+        {.hover-animation img {
+            height: 53vw;
+            width: 53vw; }
+           
+        }
+
+       
+      
+      
+
       .hover-animation img.img-front:hover{
         opacity:0;
         cursor: pointer; }
@@ -270,8 +387,7 @@ transition: transform 0.6s;
 
 
 /*Forms styling
-============================
-=============================*/
+=========================*/
 
 fieldset {
     width: 70%;
@@ -331,8 +447,6 @@ label {
   
 }
 
-
-
     input[type=submit]
  {
     background: #E35A01;
@@ -363,15 +477,19 @@ input[type=reset] {
     margin-top: 8px;
     padding: 8px; } 
 
-    .reset:hover {
+.reset:hover {
         
-        box-shadow: 0 0 6px #E35A01;
-        color: #E35A01; }
+box-shadow: 0 0 6px #E35A01;
+color: #E35A01; }
 
 
 .center-row {
     text-align: center;
 }
+
+
+/*this class name can be missleding, I was not able style the button itself,
+only the label on the right*/
 
 #upload-button {
     font-size: 16px;
@@ -386,6 +504,8 @@ input[type=reset] {
    } 
     
 
+   /*Footer styling 
+   ================== */
 
 footer {
 background-color: #E35A01;
@@ -396,37 +516,39 @@ line-height: 45px;
 margin:2px
 }
 
-
-
 footer #footer-div-left {
     display: block;
     float: left;
     
 }
-
-
 footer #footer-div-left a {
     text-decoration: none;
-    text-decoration: none;
+    font-size: 35px;
     color: whitesmoke; 
     font-weight: bold;
     text-transform: uppercase;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
-footer a:hover { 
-    font-size: large;
-   }
-
-#footer-div-right {
-    display:block;
-    float: right;
+@media only screen and (max-width: 300px) 
+{ footer #footer-div-left a {
+    font-size: 25px;
+    
 
 }
+}
+
+    footer #footer-div-left a:hover {
+        color:#0048A4;
+    }
+   
 
 
 
+
+/*Gallery page styling
+===================*/
 
 .gallery-masonry{
     max-width: 85%;
@@ -464,18 +586,20 @@ footer a:hover {
     /*media query for gallery layout */
   
 
-    @media only screen and (max-width: 650px) 
+    @media only screen and (max-width: 800px) 
     {.gallery-masonry .image-container {
         columns:2;
         gap:2px;}
   }
 
 
-  @media only screen and (max-width: 400px) 
+  @media only screen and (max-width: 300px) 
     {.gallery-masonry .image-container {
         columns:1;
         gap:1px;}
   }
+
+  /* Images caption styling */
 
   .figcaption-gallery {
     
@@ -488,4 +612,36 @@ padding:2px ;
     float:left;
     position: relative;
     top: -38px;
+  }
+
+  @media only screen and (max-width: 400px) 
+  {.figcaption-gallery {
+        max-width: 400px;
+        font-size: 12px;
+  }
+}
+
+
+/*code copied from w3schools.com I could not figured out how force this iframe to be in center
+and responsive*/
+.iframe-container {
+    background-color: whitesmoke;
+    position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%;
+  text-align: center;
+}
+
+.responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: auto;
+    right: 0;
+    width: 80%;
+    height: 100%;
+    margin: auto;
+  
+  
   }

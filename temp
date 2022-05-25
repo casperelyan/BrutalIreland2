@@ -1,0 +1,25 @@
+ figcaption a {
+        background: #0048A4;
+        font-family: "Fjalla One", Arial, Helvetica, sans-serif;
+        text-decoration: none;
+        color: whitesmoke;
+        display: inline-block;
+        margin-top: 8px;
+        padding: 8px; }
+        
+
+       
+    
+        figcaption a:hover { 
+            color:#E35A01;
+             }
+
+
+
+             Described as cold and soulless, heavy and imposing, 
+             Brutalism is often associated with totalitarianism. 
+             In fact, many Brutalist structures do appear similar to buildings in 
+             Stalin's Soviet Union. Brutalism is the techno music of architecture, 
+             stark and menacing. Brutalist buildings are expensive to maintain and difficult 
+             to destroy. They can't be easily remodeled or changed, so 
+             they tend to stay the way the architect intended
